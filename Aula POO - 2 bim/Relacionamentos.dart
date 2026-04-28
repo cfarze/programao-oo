@@ -1,7 +1,7 @@
 // 1 - Associação
 
 // Aluno --- Realiza --- Matrícula
-// Professor --- 
+// Professor --- Corrige --- Provas
 
 // 2 - Agregação
 
@@ -64,6 +64,13 @@ class ClassePai{
   set atributo3(String atributo3) {
     _atributo3 = atributo3;
   }
+
+  imprime() {
+    print("classe pai:")
+    print(atributo1);
+    print(atributo2);
+    print(atributo3);
+  }
 }
 
 class ClasseFilha extends ClassePai {
@@ -73,4 +80,17 @@ class ClasseFilha extends ClassePai {
   // os atributos da classe pai primeiro
   // se a classe pai tiver o construtor default (sem parâmetros ou com valor dafault)
   // --- a chamada não precisa ser explícita
+  ClasseFilha(String atributo1, String atributo2, this.atributo4) : super(atributo1, atributo2);
+
+  @override
+  imprime() {
+    super.imprime();
+    print('classe filha');
+  }
 }
+
+// Buscar por:
+
+// Effective Java
+// Effective Dart
+// Effective C++
