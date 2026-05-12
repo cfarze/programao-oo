@@ -1,5 +1,3 @@
-import 'colorivel.dart';
-import 'nomeavel.dart';
 
  abstract class FormaGeometrica {
   int _numLados;

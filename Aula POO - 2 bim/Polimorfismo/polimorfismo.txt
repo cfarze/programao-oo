@@ -1,0 +1,48 @@
+Polimorfismo
+
+Poli = Muitos/Muitas
+Morphos = Formas
+
+Polimorfismo Paramétrico
+------------------------
+
+1 função com mesmo nome e parâmetros diferentes
+
+void soma(int x, int y, [int z = 0]) {
+    return x + y +z;
+}
+
+//Em java, c++, c#, etc
+void soma(int x, int y) {
+    return x + y;
+}
+
+void soma(int x, int y, int z) {
+    return x + y + z;
+}
+
+soma(2,2);
+soma(2,3,4);
+
+Tipos Genéricos
+---------------
+
+Uma única classe pode ter diversas formas de compilar (int, double, string, etc)
+
+class Caixa {
+    int coisa = 0;
+
+    adicionar (int item) {
+        _coisa = item;
+    }
+
+    imprimir() {
+        print(coisa);
+    }
+
+    Polimorfismo de Herança
+    -----------------------
+
+    Funcionário <|------ Gerente (gerente é um funcionário)
+
+    Facilita na abstração
